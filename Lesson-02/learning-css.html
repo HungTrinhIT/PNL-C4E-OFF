@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="./learning-css.css" ="css" /> -->
+    <link rel="stylesheet" href="./learning-css.css" />
+    <title>Learning CSS</title>
+    <style>
+      /* div {
+        border: 2px double black;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 24px;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; color: white; background-color: black">
+      Inline CSS
+    </h1>
+    <h2>Internal css</h2>
+
+    <div id="card">
+      <div class="card-info">
+        <h4>Trinh Vu Minh Hung</h4>
+        <p>Software <strong>engineer</strong></p>
+        <p>
+          Year experiences:
+          <span>2 years</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="card-coffee">
+      <img src="./images/img-3.jpeg" />
+      <div class="card-info">
+        <h3 id="card-title">The coffee house</h3>
+        <p><strong>Rating:</strong> 4.5</p>
+      </div>
+    </div>
+    <button onclick="clickme()">Click me</button>
+
+
+    <div class="flex">
+        <div class="flex-item">Item 1</div>
+        <div class="flex-item">Item 2</div>
+        <div class="flex-item">Item 3</div>
+        <div class="flex-item">Item 4</div> 
+    </div>
+
+    <script>
+      const cardTitle = document.getElementById("card-title");
+      function clickme() {
+        cardTitle.innerText = "The coffee house";
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 3 loai CSS
+    - Inline
+    - Internal CSS
+    - External CSS
+-->
